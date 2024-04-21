@@ -1,57 +1,53 @@
 body {
- background-image:url("https://www.dailypaws.com/thmb/d3vNqnLf6Vqjz8oz5XObGCQxms4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tiny-white-kitten-873941684-2000-0bac130389984aba9751de5e5e50d25f.jpg");
-}
-.row {
-  position:relative;
-  margin-left:10%;
-  margin-right:10%;
-}
-#clear {
-  clear:both;
+  background-image: url('https://www.dailypaws.com/thmb/d3vNqnLf6Vqjz8oz5XObGCQxms4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tiny-white-kitten-873941684-2000-0bac130389984aba9751de5e5e50d25f.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
-.white{
- border: 1px solid black;
- width: 10%;
- height: 60px;
- background-color:white;
- float:left;
+#container {
+ margin-top:10%;
+ margin-left:10%;
+ margin-right:10%;
+ margin-bottom:5%;
+ font-size: 0; 
 }
 
-.black{
- border: 1px solid black;
- width: 10%;
- height: 60px;
- background-color:#787878;
- float:left;
+#title {
+ position:fixed;
+ top:0px;
+ left:0px; 
+ padding:1%;
+ margin:0px;
+ width:100%;
+ background-color:lightblue;
+ text-align:center; 
+ z-index:10;
+ font-family: 'UniqueRegular';
+ font-weight: normal;
+ font-style: normal;
+}
+
+.white-box {
+  background-color: white;
+  width: 10%;
+  border: 1px solid black;
+  margin: 0px;
+  height: 60px;
+  display: inline-block; 
+}
+
+.black-box {
+  background-color: black;
+  width: 10%;
+  border: 1px solid black;
+  margin-right: 0px;
+  display: inline-block;
+  height: 60px;
 }
 
 #footer {
  border:solid 1px;
  padding: 10px;
  margin:10px;
+ text-align: center;
 }
-#container {
- margin-top:20%;
- margin-left:10%;
- margin-right:10%;
- margin-bottom:5%;
-}
-#title {
- position:fixed;
- top:0px;
- left:0px;
- padding:10px;
- margin:0px;
- width:100%;
- background-color:lightyellow;
- text-align:center;
- z-index:10;
-font-family: 'FuturaRennerRegular';
- font-weight: normal;
- font-style: normal;
- font-size:36px;}
- img {
-  margin-left: 5px;
-  margin-top:10px;
-  }
