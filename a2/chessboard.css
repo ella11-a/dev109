@@ -27,7 +27,7 @@ body {
  font-style: normal;
 }
 
-.white-box {
+.white {
   background-color: white;
   width: 10%;
   border: 1px solid black;
@@ -36,7 +36,7 @@ body {
   display: inline-block; 
 }
 
-.black-box {
+.black {
   background-color: black;
   width: 10%;
   border: 1px solid black;
