@@ -10,6 +10,7 @@ body {
  margin-right:10%;
  margin-bottom:5%;
  font-size: 0; 
+ text-align: center;
 }
 
 #title {
@@ -47,7 +48,8 @@ body {
 
 #footer {
  border:solid 1px;
- padding: 10px;
- margin:10px;
+ padding: 50px;
+ margin:30px;
+ background-color:lightblue;
  text-align: center;
 }
