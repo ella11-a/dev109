@@ -4,7 +4,11 @@
 				text-align: center;}
 			body {
 				width: 90%;
-				margin: 0 auto;}
+				margin: 0 auto;
+                background-image: url("https://wallpapers.com/images/featured/cute-cat-pictures-938581t208y2q8le.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+          }
 			#content {
 				overflow: auto;}
 			#nav, #feature, #footer {
@@ -25,3 +29,31 @@
 				height: 10em;
 				margin-bottom: 1em;
 				background-color: #efefef;}
+          .column1{
+            background-color: lightblue;
+          }
+          .column2{
+            background-color: darkred;
+          }
+          .column3{
+            background-color: lightpink;
+          }
+          #feature{
+            background-color: lime;
+            background-image: url("https://images.saymedia-content.com/.image/t_share/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+          }
+          #footer{
+            background-color: orange;
+            
+          }
+          #nav{
+            background-color: yellow;
+          }
+          h1 {
+           font-family: 'TruenoRegular';
+           font-weight: normal;
+           font-style: normal;
+          }
