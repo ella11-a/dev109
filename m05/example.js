@@ -1,4 +1,6 @@
-var table = 3;             // Unit of table
+
+
+var table = prompt("Enter a value. ");             // Unit of table
 
 operator = GetValueFromUser("operator");
 table = GetValueFromUser("table")
