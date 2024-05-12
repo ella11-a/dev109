@@ -1,0 +1,18 @@
+
+.table{
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-row{
+  display: table-row;
+  border: 1px solid;
+}
+
+.table-col{
+  display: table-cell;
+  border: 1px solid;
+  padding: 8px;
+}
+
