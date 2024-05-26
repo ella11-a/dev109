@@ -206,7 +206,7 @@ function zipcode() {
     }
   }
 
-  errorMessage += "HELLO";
+
   document.getElementById("ZipCode").innerHTML = errorMessage;
   return (validZipCode);
 }
