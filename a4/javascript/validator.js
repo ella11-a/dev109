@@ -1,7 +1,5 @@
 function isValid() {
-    if (firstName() //&&
-       // lastName()
-    )
+    if (firstName() && lastName() && email() && phoneValidator())
     return true;
     else
         document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
@@ -32,9 +30,11 @@ function firstName(){
 
     //4) Send error message to HTML
     document.getElementById("fname").innerHTML = errorMessages;
+    return (validFirstname);
+};
 
-
-    //1) Create variable
+function lastName() {
+   //1) Create variable
     var validLastname=false;
 
     //2) read value from HTML
@@ -55,8 +55,11 @@ function firstName(){
 
     //4) Send error message to HTML
     document.getElementById("lname").innerHTML = errorMessages2;
+    return(validLastname);
+};
 
-    var validEmail = false;
+function email() {
+     var validEmail = false;
     var userEmail = document.getElementById("email").value;
     var atpos = userEmail.indexOf("@");
     var dotpos = userEmail.lastIndexOf(".");
@@ -69,27 +72,20 @@ function firstName(){
       validEmail = true;
     }
     document.getElementById("em").innerHTML = errorMessages3;
+    return(validEmail);
+};
 
+function phoneValidator() {
+  
     var errorMessage4 = "";
     var phone = document.getElementById("phone").value;
     if (isNaN(phone) || phone.lenght >15 || phone===null || phone==="") {
       errorMessage4 += "<p> Invalid phone number. Should only be numerical values, max 15 digits.</p>"
     }
-    else
+    else {
       validPhone = true;
     }
 
     document.getElementById("phoneNum").innerHTML = errorMessages4;
-
-    
-  
-  
-  
-  
-  
-  
-  
-  
-
-    return (validFirstname && validLastname && validEmail && validPhone);
+    return(validPhone);
 };
