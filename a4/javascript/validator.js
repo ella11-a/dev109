@@ -109,7 +109,7 @@ function username() {
 function password() {
   var validPassword = false;
     var errorMessage ="";
-    var passWord = document.getElementById("Password").value;
+    var passWord = document.getElementById("password").value;
     if (passWord === null || passWord === "" || passWord > 7) {
       errorMessage += "<p>Invalid Password</p>";
     }
@@ -124,7 +124,7 @@ function password() {
 function address() {
     var validAddress = false;
     var errorMessage ="";
-    var add = document.getElementById("Address").value;
+    var add = document.getElementById("address").value;
     if (add === null || add==="") {
       errorMessage += "<p>Address required</p>";
     }
@@ -138,7 +138,7 @@ function address() {
 function city() {
   var validCity = false;
     var errorMessage ="";
-    var cityVar = document.getElementById("City").value;
+    var cityVar = document.getElementById("city").value;
     if (add === null || add==="") {
       errorMessage += "<p>City required</p>";
     }
@@ -153,7 +153,7 @@ function city() {
 
 function zipCode() {
   var country = document.getElementById("country").value;
-  var zipcodeVar = document.getElementById("ZipCode").value;
+  var zipcodeVar = document.getElementById("zipCode").value;
   var validZipCode = false;
   var errorMessage = "";
   if (country === "USA") {
