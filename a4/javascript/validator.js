@@ -1,6 +1,6 @@
 function isValid() {
     if (firstName() && lastName() && email() && phoneValidator() && username() && password() && 
-        address() && city() && zipCode)
+        address() && city() && zipCode && state() && country())
     return true;
     else
         document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
@@ -157,14 +157,49 @@ function city() {
   return (validCity)
 }
 
+State.addEventListener('blur',state, false);
+function state() {
+  var validState = false;
+  var errorMessage = "";
+  var stateOption = document.getElementById("state").value;
+  if (stateOption === null || stateOption === "") {
+    errorMessage += "<p>Invalid State. Please choose. </p>";
+  }
+  else {
+    validState = true;
+  }
+  
+  document.getElementById("State").innerHTML = errorMessage;
+  return (validState);
+}
+
+Country.addEventListener('blur',country, false);
+function country() {
+  var validCountry = false;
+  var errorMessage = "";
+  var countryOption = document.getElementById("country").value;
+  if (countryOption === null || countryOption === "") {
+    errorMessage += "<p>Invalid Country. Please choose. </p>";
+  }
+  else {
+    validCountry = true;
+  }
+  
+  document.getElementById("Country").innerHTML = errorMessage;
+  return (validCountry);
+}
+
+
+
 
 ZipCode.addEventListener('blur', zipcode, false);
 function zipCode() {
-  var country = document.getElementById("country").value;
+  var countryVal = document.getElementById("country").value;
   var zipcodeVar = document.getElementById("zipcode").value;
+  
   var validZipCode = false;
   var errorMessage = "";
-  if (country === "USA") {
+  if (countryVal.equals("USA")) {
     if(isNan(zipcodeVar) || zipcodeVar === null || zipcodeVar === "" || zipcodeVar > 5) {
       errorMessage += "<p>Invalid ZipCode</p>";
     }
