@@ -92,6 +92,6 @@ function firstName(){
   
   
   
-  
-    return (validFirstname && validLastname && validEmail && validPhone);
+      var isValidForm = isValid();
+    return (validFirstname && validLastname && validEmail && validPhone && isValidForm);
 };
