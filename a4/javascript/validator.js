@@ -153,11 +153,11 @@ function city() {
 
 function zipCode() {
   var country = document.getElementById("country").value;
-  var zipcodeVar = document.getElementById("zipCode").value;
+  var zipcodeVar = document.getElementById("zipcode").value;
   var validZipCode = false;
   var errorMessage = "";
   if (country === "USA") {
-    if(zipcodeVar === null || zipcodeVar === "" || zipcodeVar > 5) {
+    if(isNan(zipcodeVar) || zipcodeVar === null || zipcodeVar === "" || zipcodeVar > 5) {
       errorMessage += "<p>Invalid ZipCode</p>";
     }
     else {
