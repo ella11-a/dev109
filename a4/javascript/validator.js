@@ -1,25 +1,38 @@
-function validateForm() {
-    // Create variable to control status of each field. Assume that they are not valid initially.
-    var validFirstname = false;
+function isValid() {
+    if (firstName() //&&
+       // lastName()
+    )
+    return true;
+    else
+        document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
+        event.preventDefault();
+        return false;
+}
 
-    // Read value from HTML
-    var firstname = document.getElementById("firstname").value;
-    
-    // Initialize error message
+FirstName.addEventListener('blur', firstName, false);
+function firstName(){
+    //1) Create variable
+    var validFirstname=false;
+
+    //2) read value from HTML
+    var firstname = document.getElementById("FirstName").value;
     var errorMessages = "";
 
-    // Do validation
-    if (firstname === null || firstname === "" || firstname.length > 20 || !firstname.match(/^[a-zA-Z]+$/)) {
-        // If any of the conditions fail, set error message
-        errorMessages += "<p>The firstname is required and cannot be greater than 20 characters. Only alphabetical characters are allowed.</p>";
-    } else {
-        // Otherwise, the firstname is valid
-        validFirstname = true;
-    }
+    //3) Do validation
+    if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
+        errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
+        console.log("First name invalid — length")
+        } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
+            errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            console.log("First name invalid — bad characters")
+        } else {
+                validFirstname = true;
+                console.log("First name valid")
+        };
 
-    // Send error message to HTML
-    document.getElementById("errorMessages").innerHTML = errorMessages;
+    //4) Send error message to HTML
+    document.getElementById("fname").innerHTML = errorMessages;
 
-    // Return status of the FirstName field
-    return validFirstname;
-}
+    //5) return status of each field
+    return (validFirstname);
+};
