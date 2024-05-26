@@ -1,5 +1,6 @@
 function isValid() {
-    if (firstName() && lastName() && email() && phoneValidator())
+    if (firstName() && lastName() && email() && phoneValidator() && username() && password() && 
+        address() && city() && zipCode)
     return true;
     else
         document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
@@ -26,12 +27,12 @@ function firstName(){
         } else {
                 validFirstname = true;
                 console.log("First name valid")
-        };
+        }
 
     //4) Send error message to HTML
     document.getElementById("fname").innerHTML = errorMessages;
     return (validFirstname);
-};
+}
 
 function lastName() {
    //1) Create variable
@@ -51,12 +52,12 @@ function lastName() {
         } else {
                 validLastname = true;
                 console.log("Last name valid")
-        };
+        }
 
     //4) Send error message to HTML
     document.getElementById("lname").innerHTML = errorMessages2;
     return(validLastname);
-};
+}
 
 function email() {
      var validEmail = false;
@@ -73,19 +74,100 @@ function email() {
     }
     document.getElementById("em").innerHTML = errorMessages3;
     return(validEmail);
-};
+}
 
 function phoneValidator() {
-  
+    var validPhone = false;
     var errorMessage4 = "";
     var phone = document.getElementById("phone").value;
-    if (isNaN(phone) || phone.lenght >15 || phone===null || phone==="") {
-      errorMessage4 += "<p> Invalid phone number. Should only be numerical values, max 15 digits.</p>"
+    if (isNaN(phone) || phone.length >15 || phone===null || phone==="") {
+      errorMessage4 += "<p> Invalid phone number. Should only be numerical values, max 15 digits.</p>";
     }
     else {
       validPhone = true;
     }
 
-    document.getElementById("phoneNum").innerHTML = errorMessages4;
+    document.getElementById("phoneNum").innerHTML = errorMessage4;
     return(validPhone);
-};
+}
+
+
+function username() {
+    var validUsername = false;
+    var errorMessage ="";
+    var userName = document.getElementById("username").value;
+    if (userName.length <= 0 || userName.length > 12) {
+      errorMessage += "<p>Invalid User</p>";
+    }
+  else {
+    validUsername = true;
+  }
+    document.getElementById("userName").innerHTML = errorMessage;
+  return (validUsername);
+}
+
+function password() {
+  var validPassword = false;
+    var errorMessage ="";
+    var passWord = document.getElementById("Password").value;
+    if (passWord === null || passWord === "" || passWord > 7) {
+      errorMessage += "<p>Invalid Password</p>";
+    }
+  else {
+    validPassword = true;
+  }
+    document.getElementById("Password").innerHTML = errorMessage;
+  return (validPassword);
+  
+}
+
+function address() {
+    var validAddress = false;
+    var errorMessage ="";
+    var add = document.getElementById("Address").value;
+    if (add === null || add==="") {
+      errorMessage += "<p>Address required</p>";
+    }
+  else {
+    validAddress = true;
+  }
+    document.getElementById("Address").innerHTML = errorMessage;
+  return (validAddress);
+}
+
+function city() {
+  var validCity = false;
+    var errorMessage ="";
+    var cityVar = document.getElementById("City").value;
+    if (add === null || add==="") {
+      errorMessage += "<p>City required</p>";
+    }
+  else {
+    validCity = true;
+  }
+    document.getElementById("City").innerHTML = errorMessage;
+  return (validCity)
+}
+
+
+
+function zipCode() {
+  var country = document.getElementById("country").value;
+  var zipcodeVar = document.getElementById("ZipCode").value;
+  var validZipCode = false;
+  var errorMessage = "";
+  if (country === "USA") {
+    if(zipcodeVar.length > 5) {
+      errorMessage += "<p>Invalid ZipCode</p>";
+    }
+    else {
+      validZipCode = true;
+    }
+  }
+  else {
+    validZipCode = true;
+  }
+  
+  document.getElementById("ZipCode").innerHTML = errorMessage;
+  return (validZipCode);
+}
