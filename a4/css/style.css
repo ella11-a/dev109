@@ -1,0 +1,10 @@
+.warning {
+    color:red;
+}
+
+form{
+  border: 1px solid;
+  padding: 20px;
+  width: 300px;
+  background-color: lightblue;
+}
