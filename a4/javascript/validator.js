@@ -10,10 +10,10 @@ function isValid() {
 }
 
 FirstName.addEventListener('blur', firstName, false);
-function validateForm(){
+function firstName(){
     //1) Create variable
     var validFirstname=false;
-  
+
     //2) read value from HTML
     var firstname = document.getElementById("FirstName").value;
     var errorMessages = "";
@@ -23,37 +23,39 @@ function validateForm(){
         errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
         console.log("First name invalid — length")
         } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
-            errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            errorMessages += "<p>Invalid character in first name (accepts only A-Z, a-z, and ,.'-)</p>";
             console.log("First name invalid — bad characters")
         } else {
                 validFirstname = true;
                 console.log("First name valid")
-        }
+        };
 
     //4) Send error message to HTML
     document.getElementById("fname").innerHTML = errorMessages;
 
+    //5) return status of each field
     //1) Create variable
     var validLastname=false;
-  
+
     //2) read value from HTML
     var lastname = document.getElementById("LastName").value;
     var errorMessages2 = "";
 
     //3) Do validation
-    if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
+    if (lastname==="null" || lastname==="" || lastname.length > 20 ) {
         errorMessages2 += "<p>The last name is required and cannot be greater than 20 characters</p>";
-        console.log("Last name invalid — length")
+        console.log("First name invalid — length")
         } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
-            errorMessages2 += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            errorMessages2 += "<p>Invalid character in last name (accepts only A-Z, a-z, and ,.'-)</p>";
             console.log("Last name invalid — bad characters")
         } else {
-                validFirstname = true;
+                validLastname = true;
                 console.log("Last name valid")
-        }
+        };
 
     //4) Send error message to HTML
     document.getElementById("lname").innerHTML = errorMessages2;
+
+    //5) return status of each field
     return (validFirstname && validLastname);
-  
-}
+};
