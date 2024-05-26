@@ -1,6 +1,6 @@
 function isValid() {
     if (firstName() && lastName() && email() && phoneValidator() && username() && password() && 
-        address() && city() && zipCode && state() && country())
+        address() && city() && zipcode() && state() && country())
     return true;
     else
         document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
@@ -79,8 +79,7 @@ function email() {
     return(validEmail);
 }
 
-
-PhoneNum.addEventListener('blur', phone, false);
+document.getElementById("phone").addEventListener('blur', phone, false);
 function phoneValidator() {
     var validPhone = false;
     var errorMessage4 = "";
@@ -192,25 +191,22 @@ function country() {
 
 
 
-ZipCode.addEventListener('blur', zipcode, false);
-function zipCode() {
+function zipcode() {
   var countryVal = document.getElementById("country").value;
   var zipcodeVar = document.getElementById("zipcode").value;
   
   var validZipCode = false;
-  var errorMessage = "";
-  if (countryVal.equals("USA")) {
-    if(isNan(zipcodeVar) || zipcodeVar === null || zipcodeVar === "" || zipcodeVar > 5) {
+  var errorMessage="";
+  if (countryVal ==="USA") {
+    if(isNaN(zipcodeVar) || zipcodeVar === null || zipcodeVar === "" || zipcodeVar.length > 5) {
       errorMessage += "<p>Invalid ZipCode</p>";
     }
     else {
       validZipCode = true;
     }
   }
-  else {
-    validZipCode = true;
-  }
-  
+
+  errorMessage += "HELLO";
   document.getElementById("ZipCode").innerHTML = errorMessage;
   return (validZipCode);
 }
