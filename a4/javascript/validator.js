@@ -34,6 +34,7 @@ function firstName(){
     return (validFirstname);
 }
 
+LastName.addEventListener('blur', lastName, false);
 function lastName() {
    //1) Create variable
     var validLastname=false;
@@ -59,6 +60,8 @@ function lastName() {
     return(validLastname);
 }
 
+
+Email.addEventListener('blur', email, false);
 function email() {
      var validEmail = false;
     var userEmail = document.getElementById("email").value;
@@ -76,6 +79,8 @@ function email() {
     return(validEmail);
 }
 
+
+PhoneNum.addEventListener('blur', phone, false);
 function phoneValidator() {
     var validPhone = false;
     var errorMessage4 = "";
@@ -91,7 +96,7 @@ function phoneValidator() {
     return(validPhone);
 }
 
-
+userName.addEventListener('blur', username, false);
 function username() {
     var validUsername = false;
     var errorMessage ="";
@@ -106,6 +111,8 @@ function username() {
   return (validUsername);
 }
 
+
+Password.addEventListener('blur', password, false);
 function password() {
   var validPassword = false;
     var errorMessage ="";
@@ -121,6 +128,7 @@ function password() {
   
 }
 
+Address.addEventListener('blur', address, false);
 function address() {
     var validAddress = false;
     var errorMessage ="";
@@ -134,7 +142,7 @@ function address() {
     document.getElementById("Address").innerHTML = errorMessage;
   return (validAddress);
 }
-
+City.addEventListener('blur', city, false);
 function city() {
   var validCity = false;
     var errorMessage ="";
@@ -150,7 +158,7 @@ function city() {
 }
 
 
-
+ZipCode.addEventListener('blur', zipcode, false);
 function zipCode() {
   var country = document.getElementById("country").value;
   var zipcodeVar = document.getElementById("zipcode").value;
