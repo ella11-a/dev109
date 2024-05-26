@@ -139,7 +139,7 @@ function city() {
   var validCity = false;
     var errorMessage ="";
     var cityVar = document.getElementById("city").value;
-    if (add === null || add==="") {
+    if (cityVar === null || cityVar==="") {
       errorMessage += "<p>City required</p>";
     }
   else {
@@ -157,7 +157,7 @@ function zipCode() {
   var validZipCode = false;
   var errorMessage = "";
   if (country === "USA") {
-    if(zipcodeVar.length > 5) {
+    if(zipcodeVar === null || zipcodeVar === "" || zipcodeVar > 5) {
       errorMessage += "<p>Invalid ZipCode</p>";
     }
     else {
