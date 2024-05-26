@@ -33,7 +33,7 @@ function firstName(){
     //4) Send error message to HTML
     document.getElementById("fname").innerHTML = errorMessages;
 
-    //5) return status of each field
+
     //1) Create variable
     var validLastname=false;
 
@@ -56,6 +56,42 @@ function firstName(){
     //4) Send error message to HTML
     document.getElementById("lname").innerHTML = errorMessages2;
 
-    //5) return status of each field
-    return (validFirstname && validLastname);
+    var validEmail = false;
+    var userEmail = document.getElementById("email").value;
+    var atpos = userEmail.indexOf("@");
+    var dotpos = userEmail.lastIndexOf(".");
+    var errorMessages3 = "";
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) {
+    // send error message. For example:  errorMessages = "<p>Invalid email</p>";
+      errorMessages3 += "<p>Invalid email</p>";
+    }
+    else {
+      validEmail = true;
+    }
+    document.getElementById("em").innerHTML = errorMessages3;
+
+    var errorMessage4 = "";
+    var phone = document.getElementById("phone").value;
+    if (isNaN(phone) || phone.lenght >15 || phone===null || phone==="") {
+      errorMessage4 += "<p> Invalid phone number. Should only be numerical values, max 15 digits.</p>"
+    }
+    else
+      validPhone = true;
+    }
+
+    document.getElementById("phoneNum").innerHTML = errorMessages4;
+
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    return (validFirstname && validLastname && validEmail && validPhone);
 };
