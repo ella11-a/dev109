@@ -10,10 +10,10 @@ function isValid() {
 }
 
 FirstName.addEventListener('blur', firstName, false);
-function firstName(){
+function validateForm(){
     //1) Create variable
     var validFirstname=false;
-
+  
     //2) read value from HTML
     var firstname = document.getElementById("FirstName").value;
     var errorMessages = "";
@@ -28,11 +28,32 @@ function firstName(){
         } else {
                 validFirstname = true;
                 console.log("First name valid")
-        };
+        }
 
     //4) Send error message to HTML
     document.getElementById("fname").innerHTML = errorMessages;
 
-    //5) return status of each field
-    return (validFirstname);
-};
+    //1) Create variable
+    var validLastname=false;
+  
+    //2) read value from HTML
+    var lastname = document.getElementById("LastName").value;
+    var errorMessages2 = "";
+
+    //3) Do validation
+    if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
+        errorMessages2 += "<p>The last name is required and cannot be greater than 20 characters</p>";
+        console.log("Last name invalid — length")
+        } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
+            errorMessages2 += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            console.log("Last name invalid — bad characters")
+        } else {
+                validFirstname = true;
+                console.log("Last name valid")
+        }
+
+    //4) Send error message to HTML
+    document.getElementById("lname").innerHTML = errorMessages2;
+    return (validFirstname && validLastname);
+  
+}
