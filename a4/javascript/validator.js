@@ -90,8 +90,6 @@ function firstName(){
   
   
   
-  
-  
-      var isValidForm = isValid();
-    return (validFirstname && validLastname && validEmail && validPhone && isValidForm);
+
+    return (validFirstname && validLastname && validEmail && validPhone);
 };
