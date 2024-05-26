@@ -205,6 +205,9 @@ function zipcode() {
       validZipCode = true;
     }
   }
+    else {
+        validZipCode = true;
+    }
 
 
   document.getElementById("ZipCode").innerHTML = errorMessage;
