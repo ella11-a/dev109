@@ -80,8 +80,11 @@ h1 {
   font-style: normal;
 }
 
-.article img {
-  width: 90%;
-  height: auto;
+.column1 img, .column2 img, .column3 img {
+  width: auto;
+  height: 90px ;
 }
 
+.article{
+  height: 200px;
+}
