@@ -76,7 +76,7 @@ li {
 
 h1 {
   font-family: 'TruenoRegular';
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -88,3 +88,8 @@ h1 {
 .article{
   height: 200px;
 }
+
+#nav ul{
+  font-size: 20px;
+}
+
