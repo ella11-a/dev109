@@ -20,7 +20,7 @@ body {
   margin: 1%;
 }
 
-.column1, .column2, .column3 .column4 .column5 {
+.column1, .column2, .column3, .column4, .column5  {
   width: 31.3%;
   float: left;
   margin: 1%;
@@ -64,6 +64,7 @@ li {
 
 .column5{
   background-color: lightsalmon;
+  float: right;
 }
 
 #feature{
@@ -91,7 +92,7 @@ h1 {
   font-size: 40px;
 }
 
-.column1 img, .column2 img, .column3 img .column4 img .column5 img {
+.column1 img, .column2 img, .column3 img, .column4 img, .column5 img {
   width: auto;
   height: 90px ;
 }
