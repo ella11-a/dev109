@@ -58,6 +58,14 @@ li {
   background-color: lightpink;
 }
 
+.column4{
+  background-color: lightgreen;
+}
+
+.column5{
+  background-color: lightsalmon;
+}
+
 #feature{
   background-color: lime;
   background-image: url("https://images.saymedia-content.com/.image/t_share/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg");
@@ -83,7 +91,7 @@ h1 {
   font-size: 40px;
 }
 
-.column1 img, .column2 img, .column3 img {
+.column1 img, .column2 img, .column3 img .column4 img .column5 img {
   width: auto;
   height: 90px ;
 }
