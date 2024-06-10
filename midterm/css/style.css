@@ -68,6 +68,8 @@ li {
 
 #footer{
   background-color: orange;
+  font-size: 25px;
+ 
 }
 
 #nav{
@@ -78,6 +80,7 @@ h1 {
   font-family: 'TruenoRegular';
   font-weight: bold;
   font-style: normal;
+  font-size: 40px;
 }
 
 .column1 img, .column2 img, .column3 img {
@@ -90,6 +93,5 @@ h1 {
 }
 
 #nav ul{
-  font-size: 20px;
+  font-size: 24px;
 }
-
