@@ -25,15 +25,36 @@
 			</div>
       </div>
       <div id="contactMe">
-  <form action="https://ella11-a.github.io/dev109/final/thankyou.html" method="get" name="myContact">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email"><br><br>
-    <label for="comment">Comment: </label>
-    <input type="text" id="comment" name="comment"><br><br>
-    <input type="submit" value="Submit">
-  </form>
+  <form action="https://ella11-a.github.io/dev109/final/thankyou.html" method="get" name="myContact" onsubmit="return isValid();">
+    <p>
+      <label for='name'>Name:</label>
+      <input type="text" id="name" name="name">
+  </p>
+  <div class="warning" id="nameMsg"></div>
+
+ 
+  <p>
+      <label for='email'>Email:</label>
+      <input type="text" id="email" name="email">
+  </p>
+  <div class="warning" id="em"></div>
+  
+  <p>
+      <label for='comment'>Comment:</label>
+      <input type="text" id="comment" name="comment" >
+  </p>
+  <div class="warning" id="com"></div>
+
+
+<p>
+      <input type="submit" id="submit" name="submit" value="Submit">
+  </p>
+
+  <div class="warning" id="submiterror"></div>
+
+
+</form>
+<script src="./javascript/validator.js"></script>
       </div>
 	</body>
 </html>

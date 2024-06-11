@@ -160,3 +160,7 @@ br {
    display: block;
   font-size: 18px;
 }
+
+.warning {
+  color:red;
+}
