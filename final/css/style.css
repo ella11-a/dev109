@@ -113,15 +113,12 @@ li {
 
 .creative3 iframe{
   width: 80%
-  height: 20%;
 }
 
 .creative1 iframe, .creative2 img{
   width: 80%;
   height: 80%;
 }
-
-
 
 #feature{
   background-color: lime;
