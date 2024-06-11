@@ -26,6 +26,11 @@ body {
   margin: 1%;
 }
 
+.creative1, .creative2{
+  width: 35%;
+  margin: 1%; 
+}
+
 .column3 {
   margin-right: 0%;
 }
@@ -82,6 +87,21 @@ li {
 .mod8{
   background-color: aquamarine;
   float: right;
+}
+
+.creative1{
+  background-color: darkgreen;
+  float: left;
+}
+
+.creative2{
+  background-color:indianred;
+  float: right;
+}
+
+.creative1 iframe, .creative2 img{
+  width: 40%;
+  height: 60%;
 }
 
 
