@@ -4,13 +4,14 @@
   width: 100%;
   border-collapse: collapse;
   height: 30%;
+  color: white;
 }
 
 .table-row{
   display: table-row;
   border: 3px solid;
   height: 30%;
-  
+  color: white;
 }
 
 .table-col{
@@ -19,6 +20,7 @@
   padding: 8px;
   height: 30%;
   width: 50%;
+  color: white;
 }
 
 img {
@@ -26,6 +28,6 @@ img {
   height: auto;
 }
 
-h3, h5{
+h3, h5, h1{
   color: white;
 }
