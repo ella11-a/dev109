@@ -20,7 +20,7 @@ body {
   margin: 1%;
 }
 
-.column1, .column2, .column3, .column4, .column5  {
+.column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
   width: 31.3%;
   float: left;
   margin: 1%;
@@ -67,6 +67,25 @@ li {
   float: right;
 }
 
+.mod5{
+  background-color: light;
+}
+
+.mod6{
+  background-color: light;
+}
+
+.mod7{
+  background-color: light;
+}
+
+.mod8{
+  background-color: light;
+  float: right;
+}
+
+
+
 #feature{
   background-color: lime;
   background-image: url("https://images.saymedia-content.com/.image/t_share/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg");
@@ -92,7 +111,7 @@ h1 {
   font-size: 40px;
 }
 
-.column1 img, .column2 img, .column3 img, .column4 img, .column5 img {
+.column1 img, .column2 img, .column3 img, .column4 img, .column5 img, .mod5 img, .mod6 img, .mod7 img, .mod8 img{
   width: auto;
   height: 90px ;
 }
@@ -103,4 +122,8 @@ h1 {
 
 #nav ul{
   font-size: 24px;
+}
+
+p{
+  font-size: 18px;
 }
