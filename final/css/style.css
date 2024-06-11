@@ -43,7 +43,7 @@ li {
 
 #nav, #footer, #textbox, #textbox2 {
   background-color: #efefef;
-  padding: 0.5em 0;
+  padding: .5%;
 }
 
 #feature, .article {
@@ -149,8 +149,16 @@ p{
   font-size: 18px;
 }
 
+#textbox p{
+  font-size: 20px;
+}
+
+.creative1 p, .creative2 p{
+  font-size: 22px;
+}
+
 br {
    display: block;
-   margin: 0px 0;
+  font-size: 18px;
 }
 
