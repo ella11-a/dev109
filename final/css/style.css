@@ -16,7 +16,7 @@ body {
   overflow: auto;
 }
 
-#nav, #feature, #footer, #textbox, #textbox2{
+#nav, #feature, #footer, #textbox, #textbox2, #textbox3{
   margin: 1%;
 }
 
@@ -41,7 +41,7 @@ li {
   padding: 0.5em;
 }
 
-#nav, #footer, #textbox, #textbox2 {
+#nav, #footer, #textbox, #textbox2, #textbox3 {
   background-color: #efefef;
   padding: .5%;
 }
@@ -115,11 +115,10 @@ li {
   background-size: contain;
 }
 
-#footer, #textbox, #textbox2{
+#footer, #textbox, #textbox2, #textbox3{
   background-color: azure;
   font-size: 25px;
 }
-
 
 #nav{
   background-color: lightgoldenrodyellow;
@@ -149,8 +148,8 @@ p{
   font-size: 18px;
 }
 
-#textbox p{
-  font-size: 20px;
+#textbox p, #textbox2 p, #textbox3 p{
+  font-size: 21px;
 }
 
 .creative1 p, .creative2 p{
