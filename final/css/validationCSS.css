@@ -3,21 +3,25 @@
   display: table;
   width: 100%;
   border-collapse: collapse;
+  height: 30%;
 }
 
 .table-row{
   display: table-row;
   border: 3px solid;
+  height: 30%;
+  
 }
 
 .table-col{
   display: table-cell;
   border: 3px solid;
   padding: 8px;
+  height: 30%;
+  width: 50%;
 }
 
 img {
-  width: 1000px;
-  height: 400px;
+  width: 30%;
+  height: auto;
 }
-
