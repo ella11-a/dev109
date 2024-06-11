@@ -28,6 +28,9 @@ img {
   height: auto;
 }
 
-h3, h5, h1{
+.table-row h3, .table-row h5, .table-row h1{
+  font-family: 'TruenoRegular';
+  font-weight: bold;
+  font-style: normal;
   color: white;
 }
