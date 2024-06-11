@@ -100,6 +100,22 @@ li {
   float: right;
 }
 
+.creative3{
+  display: inline-block;
+  background-color: lightcoral;
+  float: none;
+  text-align: center;
+  width: 25%;
+  margin: 1%; 
+  height: 200px;
+  
+}
+
+.creative3 iframe{
+  width: 80%
+  height: 20%;
+}
+
 .creative1 iframe, .creative2 img{
   width: 80%;
   height: 80%;
@@ -152,8 +168,9 @@ p{
   font-size: 21px;
 }
 
-.creative1 p, .creative2 p{
+.creative1 p, .creative2 p, .creative3 p{
   font-size: 22px;
+  
 }
 
 br {
